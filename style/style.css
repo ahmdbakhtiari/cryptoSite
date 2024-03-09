@@ -73,17 +73,17 @@ header {
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
 }
-header div {
+header #rightHeader {
   display: flex;
   align-items: center;
 }
-header div img {
+header #rightHeader img {
   width: 25%;
 }
-header div ul {
+header #rightHeader ul {
   display: inline;
 }
-header div ul li {
+header #rightHeader ul li {
   display: inline;
   margin: 0px 16px;
   transition: all 0.2s;
@@ -92,15 +92,40 @@ header div ul li {
   -ms-transition: all 0.2s;
   -o-transition: all 0.2s;
 }
-header div ul li a {
+header #rightHeader ul li a {
   text-decoration: none;
   color: black;
 }
-header div ul li:hover {
+header #rightHeader ul li:hover {
   border-bottom: 1.5px solid black;
   padding-bottom: 8px;
 }
-header button {
+header #leftHeader {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header #leftHeader img {
+  width: 48px;
+  padding: 12px;
+  margin: 4px 0px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+header #leftHeader img:hover {
+  box-shadow: 0px 0px 8px rgb(179, 179, 179);
+}
+header #leftHeader button {
   color: white;
   background-color: rgb(33, 150, 243);
   padding: 8px 16px;

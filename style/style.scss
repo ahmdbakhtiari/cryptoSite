@@ -48,7 +48,7 @@ header {
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
-    div{
+    #rightHeader{
         display: flex;
         align-items: center;
         img {
@@ -81,19 +81,42 @@ header {
         }
     }
 
-    button {
-        color: white;
-        background-color: $primary-color;
-        padding: 8px 16px;
-        border-color: transparent;
-        outline: none;
-        border-radius: 100px;
-        -webkit-border-radius: 100px;
-        -moz-border-radius: 100px;
-        -ms-border-radius: 100px;
-        -o-border-radius: 100px;
-        cursor: pointer;
-        margin-right: 16px;
+    #leftHeader{
+        @include flex-evenly();
+        img{
+            width: 48px;
+            padding: 12px;
+            margin: 4px 0px;
+            background-color: #f5f5f5;
+            cursor: pointer;
+            border-radius: 100px;
+            -webkit-border-radius: 100px;
+            -moz-border-radius: 100px;
+            -ms-border-radius: 100px;
+            -o-border-radius: 100px;
+            transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            &:hover{
+                box-shadow: 0px 0px 8px rgb(179, 179, 179);
+            }
+        }
+        button {
+            color: white;
+            background-color: $primary-color;
+            padding: 8px 16px;
+            border-color: transparent;
+            outline: none;
+            border-radius: 100px;
+            -webkit-border-radius: 100px;
+            -moz-border-radius: 100px;
+            -ms-border-radius: 100px;
+            -o-border-radius: 100px;
+            cursor: pointer;
+            margin-right: 16px;
+        }
     }
 }
 
